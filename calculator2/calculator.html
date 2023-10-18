@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>calculator</title>
+<link rel="stylesheet" type="text/css" href="cal.css">
+</head>
+<body>
+    <table class="center">
+        <tr>
+            <td colspan="3" class="red"><div id="result"></div></td>
+            <td onclick="clearResult()" id="k">AC</td>
+        </tr>
+        <tr>
+            <td onclick="appendToResult('9')">9</td>
+            <td onclick="appendToResult('8')">8</td>
+            <td onclick="appendToResult('7')">7</td>
+            <td onclick="appendToResult('+')" id="e">+</td>
+        </tr>
+        <tr>
+            <td onclick="appendToResult('4')">4</td>
+            <td onclick="appendToResult('5')">5</td>
+            <td onclick="appendToResult('6')">6</td>
+            <td onclick="appendToResult('-')" id="e">-</td>
+        </tr>
+        <tr id="p">
+            <td onclick="appendToResult('1')">1</td>
+            <td onclick="appendToResult('2')">2</td>
+            <td onclick="appendToResult('3')">3</td>
+            <td onclick="appendToResult('/')" id="e">/</td>
+        </tr>
+        <tr>
+            <td onclick="appendToResult('.')">.</td>
+            <td onclick="appendToResult('0')">0</td>
+            <td onclick="calculateResult()">=</td>
+            <td onclick="appendToResult('*')" id="e">*</td>
+        </tr>
+        <tr>
+            <td id="t" colspan="4" onclick="backspace()">⌫</td>
+        </tr>
+    </table>
+
+    <script src="cal.js"></script>
+</body>
+</html>
